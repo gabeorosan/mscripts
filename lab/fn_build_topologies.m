@@ -1,0 +1,26 @@
+function [T] = fn_build_topologies(Mvpa)
+T(1).top(1:3,:) = Mvpa(11).vpa_sec_out;
+T(2).top(1:3,:) = Mvpa(7).vpa_sec_out;
+T(3).top(1:3,:) = Mvpa(8).vpa_sec_out;
+T(4).top(1:3,:) = Mvpa(9).vpa_sec_out;
+T(5).top(1:3,:) = Mvpa(10).vpa_sec_out;
+T(6).top(1:3,:) = Mvpa(22).vpa_sec_out;
+T(7).top(1:3,:) = Mvpa(14).vpa_sec_out;
+T(8).top(1:3,:) = Mvpa(15).vpa_sec_out;
+T(9).top(1:3,:) = Mvpa(16).vpa_sec_out;
+T(10).top(1:3,:) = Mvpa(17).vpa_sec_out;
+T(11).top(1:3,:) = Mvpa(18).vpa_sec_out;
+T(12).top(1:3,:) = Mvpa(19).vpa_sec_out;
+T(13).top(1:3,:) = Mvpa(20).vpa_sec_out;
+T(14).top(1:3,:) = Mvpa(21).vpa_sec_out;
+T(15).top(1:3,:) = Mvpa(31).vpa_sec_out;
+T(16).top(1:3,:) = Mvpa(50).vpa_sec_out;
+T(17).top(1:3,:) = Mvpa(51).vpa_sec_out;
+T(18).top(1:3,:) = Mvpa(52).vpa_sec_out;
+T(19).top(1:3,:) = Mvpa(53).vpa_sec_out;
+T(20).top(1:3,:) = Mvpa(54).vpa_sec_out;
+T(21).top(1:3,:) = Mvpa(55).vpa_sec_out;
+for m = 1:21
+    A(m) = max(calc_radii(T(m).top));
+    T(m).top(1:3,:) = T(m).top(1:3,:)/A(m);
+end
