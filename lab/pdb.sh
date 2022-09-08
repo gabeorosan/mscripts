@@ -1,6 +1,6 @@
 #!/bin/sh
 #accepts argument for dest folder; assumes capsids are in Downloads/
-mv ../*.vdb.gz $1/
+mv ../Downloads/*.vdb.gz $1/
 for f in $1/*; do
     if [[ $f == *"gz"* ]]; then
         echo $f
@@ -13,12 +13,15 @@ done
 
 cd $1
 for f in *.pdb; do
-    echo $f
-        makeicos.pl $f
+    	if [[ $f != *"full"* ]]; then
+    		echo $f
+        	makeicos.pl $f
+	fi
 done
 for f in *.pdb; do
-    echo $f
-    if [[ $f != *"xyz"* ]]; then
+    if [[ $f != *"xyz"* ]] && [[ $f != *"full"* ]]; then
+    	echo $f
         extract_coords.pl $f
     fi
 done
+mv *.pdb ../Documents/MATLAB/

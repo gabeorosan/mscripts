@@ -1,4 +1,5 @@
-with open('parv.txt', 'r') as f:
+import sys
+with open(sys.argv[1], 'r') as f:
 	pdb_ids = [i for i in f]
 
 from selenium import webdriver
