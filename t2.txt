@@ -1,0 +1,40 @@
+BTV-LIKE LINEAGE
+a.115.1 Reoviridae
+d.196.1 Reoviridae
+e.42.1 Totiviridae
+b.19.1 Reoviridae, Orthomyxoviridae, Coronaviridae
+e.28.1 Reoviridae
+
+HK97-LIKE LINEAGE
+b.85.2 Siphoviridae
+d.183.1 Caudovirales
+e.48.1 Herpesviridae
+
+PICORNAVIRUS-LIKE LINEAGE
+a.84.1 Microviridae
+b.121.4 Bromoviridae, Caliciviridae, Dicistroviridae, Hepeviridae, Nodaviridae, Secoviridae, Tetraviridae, Luteoviridae, Picornaviridae, Iflaviridae, Marnaviridae, Tombusviridae, Tymoviridae Birnaviridae, Ophioviridae, Myoviridae, Poleomaviridae, Sobemovirus
+b.121.5 Microviridae, Parvoviridae
+b.121.6 Papillomaviridae, Polyomaviridae
+b.121.7 Unclassified
+
+PRD1/ADENOVIRUS-LIKE LINEAGE
+b.121.2 Adenoviridae, Ascoviridae, Asfarviridae, Iridoviridae, Marsielleviridae, Mimiviridae, Phycodnaviridae, Tectiviridae
+
+CANDIDATE RETROTRANSCRIBING-LIKE LINEAGE
+a.28.3 Retroviridae
+a.62.1 Hepadnaviridae
+a.73.1 Retroviridae
+
+CANDIDATE INOVIRIDAE-LIKE LINEAGE
+b.37.1 Inoviridae
+h.1.4 Inoviridae
+
+CANDIDATE NIDOVIRALES-LIKE LINEAGE
+d.254.1 Arteriviridae, Coronaviridae 
+
+CANDIDATE LEVIVIRIDAE-LIKE LINEAGE
+d.85.1 Leviviridae 
+
+OTHER/UNCLASSIFIED
+a.190.1 Flaviviridae
+a.24.5 Benyviridae, Potyviridae, Virgaviridae
