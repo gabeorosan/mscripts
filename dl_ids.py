@@ -1,9 +1,22 @@
+import sys
+with open(sys.argv[1], 'r') as f:
+	pdb_ids = [i for i in f]
+if len(sys.argv) > 2:
+	with open(sys.argv[2], 'r') as f:
+		completed_ids = [i for i in f]
+		pdb_ids = [i for i in pdb_ids if i not in completed_ids] 
+'''
+with open('fold_ids_new.txt', "w") as f:
+	for i in pdb_ids:
+		f.write(i)
+
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
 options = webdriver.ChromeOptions()
-prefs = {"download.default_directory" : "vpscrape/getvirions/capsids/"}
+prefs = {"download.default_directory" : "dl/"}
 options.add_experimental_option("prefs",prefs)
 driver = webdriver.Chrome(executable_path='./chromedriver',options=options)
 
@@ -24,6 +37,3 @@ for id in pdb_ids:
     except Exception as e:
         print(e)
 driver.close()
-
-import subprocess
-subprocess.check_call(['./pdb.sh', 'capsids'])
